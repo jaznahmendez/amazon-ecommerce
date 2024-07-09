@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Ecommerce</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Amazon Ecommerce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Amazon Ecommerce</h1>
+            <p>Buy products from Amazon</p>
+            <button type="button" class="button_1" onclick="AddClick()">Click Me</button>
+            <div class="container" id="click-button"></div>
+            <br>
+            <button type="button" class="button_1" onclick="ChangeText()">Click Me</button>
+            <div class="container" id="text-change">
+                <p id="red">RED!!!</p>
+            </div>
+            <div class="radio-buttons">
+                <h2>Select an Option:</h2>
+                <label>
+                    <input type="radio" name="option" value="Option 1" onclick="updateSelectedOption()"> Option 1
+                </label>
+                <label>
+                    <input type="radio" name="option" value="Option 2" onclick="updateSelectedOption()"> Option 2
+                </label>
+                <label>
+                    <input type="radio" name="option" value="Option 3" onclick="updateSelectedOption()"> Option 3
+                </label>
+                <p id="selected-option">Option selected: None</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Prodcuts">
+        <div class="container" id="products">
+            
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Amazon Ecommerce &copy; 2020</p>
+    </footer>
+</html>
